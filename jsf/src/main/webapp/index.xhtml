@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<body>
+
+<ui:composition template="./WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+
+
+        <div id="page-wrapper">
+
+
+            <!-- Banner -->
+            <div id="banner-wrapper">
+                <div id="banner" class="box container">
+
+                    <div class="row">
+                        <div class="col-12 col-12-medium col-12-small" style="text-align: center">
+                            <p:graphicImage name="pic07.jpg" library="images"/>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-3 col-6-medium col-12-small" style="text-align: center">
+
+                            <h3>Random Stuff</h3>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small" style="text-align: center">
+                            <h3>Random Stuff</h3>
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small" style="text-align: center">
+                            <h3>Random Stuff</h3>
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small" style="text-align: center">
+
+                            <h3>Random Stuff</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div id="features-wrapper">
+                <div class="container">
+                    <h:form id="form">
+                        <div class="row">
+
+                            <div class="col-6 col-6-medium">
+
+                                <!-- Box -->
+                                <section class="box feature" style="background: transparent;box-shadow: none">
+                                    <div class="inner" style="text-align: center">
+                                        <p:inputNumber id="usd" placeholder="USD" value="#{viewController.usd}"
+                                                       decimalSeparator="," thousandSeparator=".">
+
+                                        </p:inputNumber>
+                                    </div>
+                                </section>
+
+                            </div>
+
+                            <div class="col-6 col-6-medium">
+
+                                <!-- Box -->
+                                <section class="box feature" style="background: transparent;box-shadow: none">
+                                    <div class="inner" style="text-align: center">
+                                        <p:inputNumber id="eur" placeholder="EUR" value="#{viewController.eur}" disabled="true"
+                                                       decimalSeparator="," thousandSeparator=".">
+
+                                        </p:inputNumber>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-12 col-12-medium">
+
+                                <!-- Box -->
+                                <section class="box feature" style="background: transparent;">
+                                    <div class="inner" style="text-align: center">
+                                        <p:commandButton value="CALCULATE" id="btn" update="@form" actionListener="#{viewController.doCEX}"
+                                                         styleClass="ui-priority-primary"/>
+
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <div id="main-wrapper">
+                <div class="container">
+
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div id="footer-wrapper">
+                <footer id="footer" class="container" style="width: 1400px;">
+                    <div class="row">
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Links -->
+                            <section class="widget links">
+                                <h3>Random Stuff</h3>
+                                <ul class="style2">
+                                    <li><a href="#">Etiam feugiat condimentum</a></li>
+                                    <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                                    <li><a href="#">Sed porttitor cras in erat nec</a></li>
+
+                                </ul>
+                            </section>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Links -->
+                            <section class="widget links">
+                                <h3>Random Stuff</h3>
+                                <ul class="style2">
+                                    <li><a href="#">Etiam feugiat condimentum</a></li>
+                                    <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                                    <li><a href="#">Sed porttitor cras in erat nec</a></li>
+
+                                </ul>
+                            </section>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Links -->
+                            <section class="widget links">
+                                <h3>Random Stuff</h3>
+                                <ul class="style2">
+                                    <li><a href="#">Etiam feugiat condimentum</a></li>
+                                    <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+                                    <li><a href="#">Sed porttitor cras in erat nec</a></li>
+
+                                </ul>
+                            </section>
+
+                        </div>
+                        <div class="col-3 col-6-medium col-12-small">
+
+                            <!-- Contact -->
+                            <section class="widget contact last">
+                                <h3>Contact Us</h3>
+                                <ul>
+                                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+                                    </li>
+                                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a>
+                                    </li>
+
+                                </ul>
+
+                            </section>
+
+                        </div>
+                    </div>
+
+                </footer>
+            </div>
+
+        </div>
+
+
+    </ui:define>
+
+</ui:composition>
+
+</body>
+</html>
