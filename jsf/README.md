@@ -1,7 +1,7 @@
 # JSF CLIENT
 
 #Run Unit Test
-mvn test
+mvn verify
 
 #Run via Maven
 mvn wildfly-swarm:run
